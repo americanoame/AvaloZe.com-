@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -17,12 +18,12 @@ import axios from 'axios'
 
 
 axios.defaults.baseURL =
-process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : '/'
+  process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : '/'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index={true} element={<HomePage />} /> 
+      <Route index={true} element={<HomePage />} />
       <Route path='product/:slug' element={<ProductPage />} />
       {/* <Route path="dashboard" element={<Dashboard />} /> */}
       {/* ... etc. */}

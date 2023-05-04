@@ -12,3 +12,14 @@ body {
   width: 100%;
 }
 
+.product-p {
+  font-size: 12px;
+}
+
+.first-nav {
+  background-image: linear-gradient(rgb(67, 87, 144), rgb(107, 197, 107));
+    padding: 5px;
+    color: #fff;
+    max-width: 100%;
+}
+

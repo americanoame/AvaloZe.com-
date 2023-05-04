@@ -4,9 +4,11 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
 
-
   return (
     <div className="d-flex flex-column vh-100">
+      <Container className="d-flex justify-content-center align-items-center first-nav">
+        <nav>Free delivery over $100 anywhere in the US/30 days return free</nav>
+      </Container>
       <header>
         <Navbar bg='dark' variant='dark' expand='lg'>
           <Container>
@@ -21,7 +23,7 @@ function App() {
       </header>
       <main>
         <Container className='mt-3'>
-         <Outlet />
+          <Outlet />
         </Container>
       </main>
 
@@ -33,6 +35,7 @@ function App() {
 
     </div>
   );
+
 }
 
 export default App;

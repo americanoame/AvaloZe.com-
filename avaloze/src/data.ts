@@ -2,10 +2,10 @@ import { Product } from "./types/Product";
 
 export const sampleProducts: Product[] = [
     {
-        name: 'Nike Slim Shirt',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
         slug: 'nike-slim-shirt',
         category: 'Shirts',
-        image: '../image/p1.jpg',
+        image: '../image/speaker.jpg',
         price: 120,
         countInStock: 10,
         brand: 'nike',
@@ -14,10 +14,10 @@ export const sampleProducts: Product[] = [
         description: 'high quality shirt',
     },
     {
-        name: 'Lacost ',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
         slug: 'lacost',
         category: 'Shirts',
-        image: '../image/p2.jpg',
+        image: '../image/speaker.jpg',
         price: 120,
         countInStock: 10,
         brand: 'nike',
@@ -26,10 +26,10 @@ export const sampleProducts: Product[] = [
         description: 'high quality shirt',
     },
     {
-        name: 'Pink',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
         slug: 'pink',
         category: 'Shirts',
-        image: '../image/p2.jpg',
+        image: '../image/speaker.jpg',
         price: 120,
         countInStock: 10,
         brand: 'nike',
@@ -38,10 +38,10 @@ export const sampleProducts: Product[] = [
         description: 'high quality shirt',
     },
     {
-        name: 'Brown',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
         slug: 'brown',
         category: 'Shirts',
-        image: '../image/p4.jpg',
+        image: '../image/speaker.jpg',
         price: 120,
         countInStock: 10,
         brand: 'nike',
