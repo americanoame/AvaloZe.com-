@@ -5,7 +5,7 @@ export const sampleProducts: Product[] = [
         name: 'Nike Slim Shirt',
         slug: 'nike-slim-shirt',
         category: 'Shirts',
-        image: '../image/p1.jpg',
+        image: '../image/speaker.jpg',
         price: 120,
         countInStock: 10,
         brand: 'nike',
