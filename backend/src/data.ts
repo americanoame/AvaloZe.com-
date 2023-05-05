@@ -3,11 +3,11 @@ import { Product } from "./types/Product";
 export const sampleProducts: Product[] = [
     {
         name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
-        slug: 'nike-slim-shirt',
+        slug: 'sony-speaker',
         category: 'Shirts',
         image: '../image/speaker.jpg',
         price: 120,
-        countInStock: 10,
+        countInStock: 0,
         brand: 'nike',
         rating: 4.5,
         numReviews: 10,
