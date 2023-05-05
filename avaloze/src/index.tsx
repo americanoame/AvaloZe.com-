@@ -17,8 +17,8 @@ import ProductPage from './pages/ProductPage';
 import axios from 'axios'
 
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : '/'
+// axios.defaults.baseURL =
+//   process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : '/'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

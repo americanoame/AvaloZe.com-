@@ -8,6 +8,7 @@ import { ApiError } from '../types/ApiError'
 import { getError } from '../utils'
 import  LoadingBox  from '../components/LoadingBox'
 import  MessageBox  from '../components/MessageBox'
+import ProductItem from '../components/ProductsItem';
 
 
 type State = {
@@ -34,11 +35,13 @@ const initialState: State = {
 const reducer = (state: State, action: Action) => {
     switch (action.type) {
         case 'FETCH_REQUEST':
-            return { ...state, loading: true }
+            return { ...state, loading: true } 
 
         case 'FETCH_SUCCESS':
 
-            return { ...state, products: action.payload, loading: false }
+
+            // this data is coming from the backend
+            return { ...state, products: action.payload, loading: false } 
         case 'FETCH_FAIL':
 
             return { ...state, loading: false, error: action.payload }
@@ -73,18 +76,29 @@ export default function HomePage() {
             <MessageBox variant='danger'>{error}</MessageBox>
         ) : (
             <Row>
-                {sampleProducts.map((product) => (
+                {products.map((product) => (
+
                     <Col key={product.slug} sm={6} md={4} lg={3}>
-                        <Link to={'/product/' + product.slug}>
+                        <ProductItem product={product}/>
+                        {/* <Link to={'/product/' + product.slug}>
+
+                            
+
                             <img src={product.image} alt={product.name}
                                 className="product-image"
                             />
                             <h2 className='product-p'>{product.name}</h2>
                             <p>{product.price}</p>
-                        </Link>
+                        </Link> */}
                     </Col>
                 ))}
             </Row>
         )
     )
 }
+
+
+{/* <Link to={link}>...</Link> this is how i might be able to concat*/}
+
+                            {/* /then we just gotta replace the link with productItem */}
+                            {/* <productItem product={product}/> */}
