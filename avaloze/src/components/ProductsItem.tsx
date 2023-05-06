@@ -12,7 +12,7 @@ function ProductItem({ product }: { product: Product }) {
             </Link>
             <Card.Body>
                 <Link to={`/product/${product.slug}`}>
-                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Title className='product-p'>{product.name}</Card.Title>
                 </Link>
                 <Rating rating={product.rating} numReviews={product.numReviews} />
                 <Card.Text>${product.price}</Card.Text>

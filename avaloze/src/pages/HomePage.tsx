@@ -1,14 +1,15 @@
 import axios from 'axios';
 import { useEffect, useReducer } from 'react'
 import { Row, Col } from 'react-bootstrap'
-import { sampleProducts } from '../data'
-import { Link } from 'react-router-dom'
+// import { sampleProducts } from '../data'
+// import { Link } from 'react-router-dom'
 import { Product } from '../types/Product'
 import { ApiError } from '../types/ApiError'
 import { getError } from '../utils'
 import  LoadingBox  from '../components/LoadingBox'
 import  MessageBox  from '../components/MessageBox'
 import ProductItem from '../components/ProductsItem';
+import { Helmet } from 'react-helmet-async';
 
 
 type State = {
@@ -75,30 +76,19 @@ export default function HomePage() {
         ) : error ? (
             <MessageBox variant='danger'>{error}</MessageBox>
         ) : (
-            <Row>
+            <Row >
+                <Helmet>
+                    <title>Avaloze</title>
+                </Helmet>
                 {products.map((product) => (
 
                     <Col key={product.slug} sm={6} md={4} lg={3}>
-                        <ProductItem product={product}/>
-                        {/* <Link to={'/product/' + product.slug}>
-
-                            
-
-                            <img src={product.image} alt={product.name}
-                                className="product-image"
-                            />
-                            <h2 className='product-p'>{product.name}</h2>
-                            <p>{product.price}</p>
-                        </Link> */}
+                        <ProductItem  product={product}/>
+                        
+                        
                     </Col>
                 ))}
             </Row>
         )
     )
 }
-
-
-{/* <Link to={link}>...</Link> this is how i might be able to concat*/}
-
-                            {/* /then we just gotta replace the link with productItem */}
-                            {/* <productItem product={product}/> */}

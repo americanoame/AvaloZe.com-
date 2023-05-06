@@ -7,9 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.product-image {
-  max-width: 400px;
+.cad-img-top {
+  max-width: 200px;
   width: 100%;
+  
 }
 
 .product-p {
