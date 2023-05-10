@@ -2,19 +2,19 @@ import { Product } from "./types/Product";
 
 export const sampleProducts: Product[] = [
     {
-        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
+        name: 'Sony SRS-XB13.',
         slug: 'sony-speaker',
         category: 'Shirts',
         image: '../image/speaker.jpg',
         price: 120,
-        countInStock: 0,
+        countInStock: 1,
         brand: 'nike',
-        rating: 4.5,
+        rating: 5.5,
         numReviews: 10,
         description: 'high quality shirt',
     },
     {
-        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker.',
         slug: 'lacost',
         category: 'Shirts',
         image: '../image/speaker.jpg',
@@ -26,7 +26,7 @@ export const sampleProducts: Product[] = [
         description: 'high quality shirt',
     },
     {
-        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker.',
         slug: 'pink',
         category: 'Shirts',
         image: '../image/speaker.jpg',
@@ -38,7 +38,7 @@ export const sampleProducts: Product[] = [
         description: 'high quality shirt',
     },
     {
-        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker, IP67 Waterproof & Durable for Outdoor, 16 Hour Battery, USB Type-C, Removable Strap, & Speakerphone, Light Blue", "Color: Light Blue',
+        name: 'Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker.',
         slug: 'brown',
         category: 'Shirts',
         image: '../image/speaker.jpg',
