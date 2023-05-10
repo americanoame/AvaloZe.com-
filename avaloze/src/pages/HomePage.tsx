@@ -9,7 +9,7 @@ import { useGetProductsQuery } from '../hooks/productHooks';
 
 export default function HomePage() {
   const { data: products, isLoading, error } = useGetProductsQuery();
-
+  console.log(products);
   return isLoading ? (
     <LoadingBox />
   ) : error ? (
@@ -17,9 +17,9 @@ export default function HomePage() {
   ) : (
     <Row>
       <Helmet>
-        <title>Avaloze</title>
+        <title>Avaloze-all</title>
       </Helmet>
-      {products!.map((product) => (
+      {products?.map((product) => (
         <Col key={product.slug} sm={6} md={4} lg={3}>
           <ProductItem product={product} />
         </Col>

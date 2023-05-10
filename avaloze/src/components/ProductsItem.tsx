@@ -6,12 +6,12 @@ import Rating from "./Rating";
 function ProductItem({ product }: { product: Product }) {
 
     return (
-        <Card>
+        <Card style={{height: '100%'}}>
             <Link to={`/product/${product.slug}`}>
                 <img src={product.image} className="cad-img-top" alt={product.name} />
             </Link>
-            <Card.Body>
-                <Link to={`/product/${product.slug}`}>
+            <Card.Body style={{display: 'flex', flexDirection: 'column'}}>
+                <Link style={{flexGrow: 1}} to={`/product/${product.slug}`}>
                     <Card.Title className='product-p'>{product.name}</Card.Title>
                 </Link>
                 <Rating rating={product.rating} numReviews={product.numReviews} />

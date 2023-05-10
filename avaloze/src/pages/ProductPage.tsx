@@ -22,13 +22,13 @@ export default function ProductPage() {
   ) : (
     <div>
       <Helmet>
-        <title>Product Page</title>
+        <title>Avaloze/{product.slug}</title>
       </Helmet>
       <Row>
         <Col md={6}>
-          {/* <img className="large" src={product.image} alt={product.name}></img> */}
+          <img className="large" src={product.image} alt={product.name}></img>
         </Col>
       </Row>
     </div>
-  )
+  );
 }
