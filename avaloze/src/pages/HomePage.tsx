@@ -17,7 +17,7 @@ export default function HomePage() {
   ) : (
     <Row>
       <Helmet>
-        <title>Avaloze-all</title>
+        <title>Avaloze</title>
       </Helmet>
       {products?.map((product) => (
         <Col key={product.slug} sm={6} md={4} lg={3}>
