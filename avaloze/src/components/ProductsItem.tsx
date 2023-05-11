@@ -17,11 +17,11 @@ function ProductItem({ product }: { product: Product }) {
                 <Rating rating={product.rating} numReviews={product.numReviews} />
                 <Card.Text>${product.price}</Card.Text>
                 {product.countInStock === 0 ? (
-                    <Button variant='light' disabled>
+                    <Button variant='danger' disabled>
                         Out of stock
                     </Button>
                 ) : (
-                    <Button>Add to cart</Button>
+                    <Button className='add-product-page-btn'>Add to cart</Button>
                 )}
             </Card.Body>
 
