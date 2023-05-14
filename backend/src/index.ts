@@ -1,15 +1,24 @@
-// import cors from 'cors'
 import express, { Request, Response } from 'express'
 import { sampleProducts } from './data'
+import dotenv from 'dotenv'
+import mongoose from 'mongoose'
+
+dotenv.config()
 
 const app = express()
 
-// app.use(
-//     cors({
-//         credentials: true,
-//         origin: ['http:/localhost:3000'],
-//     })
-// )
+const MONGODB_URI =
+process.env.MONGODB_URI || 'mongodb://localhost/avaloze'
+mongoose.set('strictQuery', true)
+mongoose
+.connect(MONGODB_URI)
+.then(() => {
+    console.log('connected to mongodb')
+})
+.catch(() => {
+    console.log('error mongodb')
+})
+
 
 app.get('/api/products', (req: Request, res: Response) => {
     res.json(sampleProducts)
