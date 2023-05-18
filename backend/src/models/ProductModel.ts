@@ -7,6 +7,7 @@ export class Product {
     @prop({required: true})
     public name!: string
 
+    // set unique to true using @prop typegoose
     @prop({required: true, unique: true})
     public slug!: string
 
@@ -23,16 +24,16 @@ export class Product {
     public description!: string
 
     @prop({ required: true, default: 0})
-    public price!: string
+    public price!: number
 
     @prop({ required: true, default: 0})
-    public countInStock!: string
+    public countInStock!: number
 
     @prop({ required: true, default: 0})
-    public rating!: string
+    public rating!: number
 
     @prop({ required: true, default: 0})
-    public numReviews!: string
+    public numReviews!: number
 
 }
 

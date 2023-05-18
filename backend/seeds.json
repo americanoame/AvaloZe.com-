@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Sony SRS-XB13.",
+    "slug": "sony-speaker",
+    "category": "Shirts",
+    "image": "../image/speaker.jpg",
+    "price": 120,
+    "countInStock": 0,
+    "brand": "nike",
+    "rating": 5.5,
+    "numReviews": 10,
+    "description": "high quality shirt"
+  },
+  {
+    "name": "Apple AirPods Pro (2nd Generation) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio, MagSafe Charging Case, Bluetooth Headphones for iPhone",
+    "slug": "lacost",
+    "category": "Shirts",
+    "image": "../image/headphone.jpg",
+    "price": 120,
+    "countInStock": 10,
+    "brand": "nike",
+    "rating": 4.5,
+    "numReviews": 10,
+    "description": "high quality shirt"
+  },
+  {
+    "name": "Sony SRS-XB13 EXTRA BASS Wireless Bluetooth Portable Lightweight Compact Travel Speaker.",
+    "slug": "pink",
+    "category": "Shirts",
+    "image": "../image/speaker.jpg",
+    "price": 120,
+    "countInStock": 10,
+    "brand": "nike",
+    "rating": 4.5,
+    "numReviews": 10,
+    "description": "high quality shirt"
+  },
+  {
+    "name": "V8 Wireless Bluetooth Headphones Over Ear, 80 Hours Playtime Wireless Headphones with Deep Bass,Lightweight Foldable Headphones Built-in Mic,HiFi Stereo Sound for Travel Work Laptop PC Cellphone",
+    "slug": "brown",
+    "category": "Shirts",
+    "image": "../image/acc.jpg",
+    "price": 120,
+    "countInStock": 10,
+    "brand": "nike",
+    "rating": 4.5,
+    "numReviews": 10,
+    "description": "high quality shirt"
+  }
+]
